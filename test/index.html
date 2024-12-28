@@ -30,51 +30,46 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC3MN4QX" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <!--<div id="appinfodesc" ></div>
+      <!--<div id="appinfodesc" ></div>
     <script type="module" src="/src/info-panel/infoPanel.tsx"></script> -->
-  <div class="grid grid-cols-6 items-start">
-    <div class="col-span-1 grid">
+    <div class="grid grid-cols-6 items-start">
+      <div class="col-span-1 grid">
 
-      <div class="bg-blue-100 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
-        Features Request List
+        <div class="bg-blue-100 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
+          Features Request List
+        </div>
+
       </div>
 
+      <div class="col-span-1">
+  <div class="grid">
+    <div id="app" class="pl-4 pr-4  border-2 border-blue-500"></div> 
+    
+    <div class="pl-4 pr-4 flex flex-col h-full w-full  border-2 border-green-500">
+      <div id="donations-top" class="flex-grow text-center"></div> 
+
+      <div id="donations" class="mb-2"></div>
     </div>
 
-    <div class="col-span-1">
-      <div class="grid">
-        <div id="app" class="pl-4 pr-4  border-2 border-blue-500"></div>
-        <script type="module" src="/src/domain-model/app/App.tsx"></script>
+  </div>
+</div>
 
-        <div class="pl-4 pr-4 flex flex-col h-full w-full  border-2 border-green-500">
-          <div id="donations-top" class="flex-grow text-center"></div>
-          <script type="module" src="/src/domain-model/app/MainnetLogin.tsx"></script>
+<div class="mr-[-4] ml-[-4] col-span-3 border-2 border-blue-500" >
+  
+  <div class="ag-theme-quartz grid">
+    <div id="appgrid" style="height: 100%"></div>
+  </div>
+  
+</div>
 
-          <div id="donations" class="mb-2"></div>
-          <script type="module" src="/src/domain-model/app/Donations.tsx"></script>
+      <div class="col-span-1 grid">
+
+        <div class="bg-green-100 hover:bg-green-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
+          Features Request List
         </div>
 
       </div>
     </div>
 
-    <div class="mr-[-4] ml-[-4] col-span-3 border-2 border-blue-500">
-
-      <div class="ag-theme-quartz grid">
-        <div id="appgrid" style="height: 100%"></div>
-        <script type="module" src="/src/domain-model/app/grid/grid.ts"></script>
-      </div>
-
-    </div>
-
-    <div class="col-span-1 grid">
-
-      <div class="bg-green-100 hover:bg-green-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
-        Features Request List
-      </div>
-
-    </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
