@@ -1,85 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3E6LRDMRBG"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
 
-  gtag('config', 'G-3E6LRDMRBG');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3E6LRDMRBG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    <meta charset="UTF-8"/>
-    <link rel="icon" type="image/svg+xml" href="/test/radarstation.svg"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="color-scheme" content="light dark"/>
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9648214142991698"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
-    <title>Monitor EOS transfers realtime</title>
-    <script type="module" crossorigin src="/test/assets/index-DWvaMUkI.js"></script>
-    <link rel="stylesheet" crossorigin href="/test/assets/index-Dj2J4B8_.css">
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC3MN4QX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-    <!--<div id="appinfodesc" ></div>
+    gtag('config', 'G-3E6LRDMRBG');
+  </script>
+
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/test/radarstation.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9648214142991698"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/ag-grid-community/dist/ag-grid-community.min.js"></script>
+  <title>Monitor EOS transfers realtime</title>
+  <script type="module" crossorigin src="/test/assets/index-DWvaMUkI.js"></script>
+  <link rel="stylesheet" crossorigin href="/test/assets/index-Dj2J4B8_.css">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC3MN4QX" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <!--<div id="appinfodesc" ></div>
     <script type="module" src="/src/info-panel/infoPanel.tsx"></script> -->
-    <div class="grid grid-cols-6 gap-4 items-start">
-      <div class="col-span-1 grid">
+  <div class="grid grid-cols-6 items-start">
+    <div class="col-span-1 grid">
 
-        <div class="bg-blue-100 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
-          Features Request
-        </div>
-
-        <!--<div id="appinfo"></div>
-        <script type="module" src="/src/demo-panel/demoPanel.tsx"></script>-->
-
-      </div>
-      <div class="col-span-1">
-        <div class="grid">
-
-          <div id="app"></div>
-          
-          <div class="mt-auto mb-2">
-            <div id="donations"></div>
-          </div>
-
-          <!--<div id="auth"></div>
-          <script type="module" src="/src/auth/Auth.tsx"></script> -->
-
-          
-
-          <!-- <div id="feed-selection"></div>
-          <script type="module" src="/src/feed-selection/feedSelection.tsx"></script>-->
-
-          <!-- <div id="appinfo"></div> -->
-          <!--<script type="module" src="/src/player/index.tsx"></script>-->
-        </div>
+      <div class="bg-blue-100 hover:bg-blue-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
+        Features Request List
       </div>
 
-      <div class="col-span-3 mr-[-4]">
-        <div class="ag-theme-quartz grid">
-          <div id="appgrid" style="height: 100%"></div>
-        </div>
-      </div>
+    </div>
 
-      <div class="col-span-1 grid">
+    <div class="col-span-1">
+      <div class="grid">
+        <div id="app" class="pl-4 pr-4  border-2 border-blue-500"></div>
+        <script type="module" src="/src/domain-model/app/App.tsx"></script>
 
-        <div class="bg-green-100 hover:bg-green-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
-          Features Request
+        <div class="pl-4 pr-4 flex flex-col h-full w-full  border-2 border-green-500">
+          <div id="donations-top" class="flex-grow text-center"></div>
+          <script type="module" src="/src/domain-model/app/MainnetLogin.tsx"></script>
+
+          <div id="donations" class="mb-2"></div>
+          <script type="module" src="/src/domain-model/app/Donations.tsx"></script>
         </div>
 
       </div>
     </div>
 
-  </body>
+    <div class="mr-[-4] ml-[-4] col-span-3 border-2 border-blue-500">
+
+      <div class="ag-theme-quartz grid">
+        <div id="appgrid" style="height: 100%"></div>
+        <script type="module" src="/src/domain-model/app/grid/grid.ts"></script>
+      </div>
+
+    </div>
+
+    <div class="col-span-1 grid">
+
+      <div class="bg-green-100 hover:bg-green-300 text-white font-bold py-2 px-4 rounded text-center cursor-pointer">
+        Features Request List
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
 </html>
